@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200">
+  <title>Canopy Vietnam — Wordmark Horizontal</title>
+  <g transform="translate(0,-150) scale(0.38)">
+    <polygon points="250,70  350,344 150,344" fill="#0D2E1A"/>
+    <polygon points="148,174 256,344  40,344" fill="#0D2E1A"/>
+    <polygon points="352,174 460,344 244,344" fill="#0D2E1A"/>
+    <rect x="243" y="344" width="14" height="58" rx="2" fill="#0D2E1A"/>
+    <rect x="141" y="344" width="14" height="44" rx="2" fill="#0D2E1A"/>
+    <rect x="345" y="344" width="14" height="44" rx="2" fill="#0D2E1A"/>
+  </g>
+  <line x1="196" y1="24" x2="196" y2="176" stroke="#0D2E1A" stroke-width="1" opacity="0.15"/>
+  <text x="216" y="88" font-family="Georgia,'Times New Roman',serif" font-size="56" font-weight="700" fill="#0D2E1A" letter-spacing="1">Canopy Vietnam</text>
+  <text x="218" y="118" font-family="Arial,sans-serif" font-size="18" fill="#5A7868" letter-spacing="5">TÁN RỪNG VIỆT NAM</text>
+  <text x="218" y="152" font-family="Georgia,serif" font-size="16" font-style="italic" fill="#3A9062">Nuôi dưỡng rừng cho tương lai</text>
+</svg>

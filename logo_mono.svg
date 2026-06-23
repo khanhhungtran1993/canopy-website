@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <title>Canopy Vietnam — Brand Sheet</title>
+  <rect width="1400" height="900" fill="#F8FBF9"/>
+  <rect width="1400" height="64" fill="#0D2E1A"/>
+  <text x="48" y="40" font-family="Georgia,serif" font-size="18" font-weight="700" fill="white" letter-spacing="2">CANOPY VIETNAM — BRAND SHEET</text>
+  <text x="48" y="56" font-family="Arial" font-size="11" fill="rgba(255,255,255,.4)" letter-spacing="1">Công ty TNHH Tán Rừng Việt Nam · BI-CV-001 v2.0</text>
+
+  <!-- LOGO VARIANTS -->
+  <!-- Dark square -->
+  <rect x="48" y="90" width="200" height="200" rx="20" fill="#0D2E1A"/>
+  <g transform="translate(148,190) scale(0.38)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="148" y="308" text-anchor="middle" font-family="Arial" font-size="11" fill="#5A7868">Dark primary</text>
+
+  <!-- Light square -->
+  <rect x="268" y="90" width="200" height="200" rx="20" fill="#EEF7F1"/>
+  <g transform="translate(368,190) scale(0.38)">
+    <polygon points="0,-140 100,124 -100,124" fill="#0D2E1A"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="#0D2E1A"/>
+    <polygon points="106,-16 306,124 -94,124" fill="#0D2E1A"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="#0D2E1A"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="#0D2E1A"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="#0D2E1A"/>
+  </g>
+  <text x="368" y="308" text-anchor="middle" font-family="Arial" font-size="11" fill="#5A7868">Light</text>
+
+  <!-- Circle dark -->
+  <circle cx="588" cy="190" r="100" fill="#0D2E1A"/>
+  <g transform="translate(588,190) scale(0.38)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="588" y="308" text-anchor="middle" font-family="Arial" font-size="11" fill="#5A7868">Circle dark</text>
+
+  <!-- Circle light -->
+  <circle cx="748" cy="190" r="100" fill="#EEF7F1"/>
+  <g transform="translate(748,190) scale(0.38)">
+    <polygon points="0,-140 100,124 -100,124" fill="#0D2E1A"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="#0D2E1A"/>
+    <polygon points="106,-16 306,124 -94,124" fill="#0D2E1A"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="#0D2E1A"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="#0D2E1A"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="#0D2E1A"/>
+  </g>
+  <text x="748" y="308" text-anchor="middle" font-family="Arial" font-size="11" fill="#5A7868">Circle light</text>
+
+  <!-- Mono -->
+  <rect x="868" y="90" width="200" height="200" rx="20" fill="#111"/>
+  <g transform="translate(968,190) scale(0.38)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="968" y="308" text-anchor="middle" font-family="Arial" font-size="11" fill="#5A7868">Monochrome</text>
+
+  <!-- Wordmark horizontal -->
+  <rect x="1088" y="90" width="280" height="200" rx="20" fill="#F0F5F1"/>
+  <g transform="translate(1106,130) scale(0.26)">
+    <polygon points="0,-140 100,124 -100,124" fill="#0D2E1A"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="#0D2E1A"/>
+    <polygon points="106,-16 306,124 -94,124" fill="#0D2E1A"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="#0D2E1A"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="#0D2E1A"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="#0D2E1A"/>
+  </g>
+  <line x1="1180" y1="110" x2="1180" y2="270" stroke="#0D2E1A" stroke-width="1" opacity="0.12"/>
+  <text x="1196" y="168" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#0D2E1A">Canopy Vietnam</text>
+  <text x="1198" y="192" font-family="Arial" font-size="11" fill="#5A7868" letter-spacing="3">TÁN RỪNG VIỆT NAM</text>
+  <text x="1198" y="220" font-family="Georgia,serif" font-size="11" font-style="italic" fill="#3A9062">Nuôi dưỡng rừng cho tương lai</text>
+  <text x="1228" y="308" text-anchor="middle" font-family="Arial" font-size="11" fill="#5A7868">Wordmark</text>
+
+  <!-- DIVIDER -->
+  <line x1="48" y1="336" x2="1352" y2="336" stroke="#0D2E1A" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- COLOR PALETTE -->
+  <text x="48" y="368" font-family="Arial" font-size="10" font-weight="500" fill="#5A7868" letter-spacing="2">BRAND COLORS</text>
+  <g transform="translate(48,382)">
+    <rect width="148" height="80" rx="8" fill="#0D2E1A"/>
+    <text x="12" y="56" font-family="Arial" font-size="11" font-weight="500" fill="white">Forest Deep</text>
+    <text x="12" y="72" font-family="monospace" font-size="10" fill="rgba(255,255,255,.5)">#0D2E1A</text>
+  </g>
+  <g transform="translate(208,382)">
+    <rect width="148" height="80" rx="8" fill="#1E5E38"/>
+    <text x="12" y="56" font-family="Arial" font-size="11" font-weight="500" fill="white">Canopy Green</text>
+    <text x="12" y="72" font-family="monospace" font-size="10" fill="rgba(255,255,255,.5)">#1E5E38</text>
+  </g>
+  <g transform="translate(368,382)">
+    <rect width="148" height="80" rx="8" fill="#3A9062"/>
+    <text x="12" y="56" font-family="Arial" font-size="11" font-weight="500" fill="white">Leaf</text>
+    <text x="12" y="72" font-family="monospace" font-size="10" fill="rgba(255,255,255,.5)">#3A9062</text>
+  </g>
+  <g transform="translate(528,382)">
+    <rect width="148" height="80" rx="8" fill="#D4A843"/>
+    <text x="12" y="56" font-family="Arial" font-size="11" font-weight="500" fill="#0D2E1A">Sunlight Gold</text>
+    <text x="12" y="72" font-family="monospace" font-size="10" fill="rgba(13,46,26,.5)">#D4A843</text>
+  </g>
+  <g transform="translate(688,382)">
+    <rect width="148" height="80" rx="8" fill="#7A5230"/>
+    <text x="12" y="56" font-family="Arial" font-size="11" font-weight="500" fill="white">Bark Brown</text>
+    <text x="12" y="72" font-family="monospace" font-size="10" fill="rgba(255,255,255,.5)">#7A5230</text>
+  </g>
+  <g transform="translate(848,382)">
+    <rect width="148" height="80" rx="8" fill="#EEF7F1" stroke="#CCDDCC" stroke-width="1"/>
+    <text x="12" y="56" font-family="Arial" font-size="11" font-weight="500" fill="#0D2E1A">Mist</text>
+    <text x="12" y="72" font-family="monospace" font-size="10" fill="#5A7868">#EEF7F1</text>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <text x="1048" y="368" font-family="Arial" font-size="10" font-weight="500" fill="#5A7868" letter-spacing="2">TYPOGRAPHY</text>
+  <rect x="1048" y="382" width="304" height="80" rx="8" fill="white" stroke="#E0EBE4" stroke-width="1"/>
+  <text x="1064" y="408" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#0D2E1A">Playfair Display</text>
+  <text x="1064" y="432" font-family="Arial" font-size="13" fill="#5A7868">DM Sans — nội dung văn bản</text>
+  <text x="1064" y="454" font-family="Arial" font-size="10" fill="#AAA" letter-spacing=".05em">Display · Body · Caption</text>
+
+  <!-- DIVIDER -->
+  <line x1="48" y1="484" x2="1352" y2="484" stroke="#0D2E1A" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- CARD MOCKUPS -->
+  <text x="48" y="516" font-family="Arial" font-size="10" font-weight="500" fill="#5A7868" letter-spacing="2">BUSINESS CARD</text>
+
+  <!-- Card front -->
+  <rect x="48" y="530" width="320" height="180" rx="10" fill="#0D2E1A"/>
+  <g transform="translate(72,590) scale(0.24)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="144" y="590" font-family="Georgia,serif" font-size="20" font-weight="700" fill="white">Canopy Vietnam</text>
+  <text x="144" y="610" font-family="Arial" font-size="10" fill="rgba(255,255,255,.4)" letter-spacing="2">TÁN RỪNG VIỆT NAM</text>
+  <text x="144" y="690" font-family="Georgia,serif" font-size="10" font-style="italic" fill="rgba(255,255,255,.5)">Nuôi dưỡng rừng cho tương lai</text>
+
+  <!-- Card back -->
+  <rect x="388" y="530" width="320" height="180" rx="10" fill="white" stroke="#E0EBE4" stroke-width="1"/>
+  <text x="410" y="574" font-family="Arial" font-size="13" font-weight="500" fill="#0D2E1A">[Họ và Tên]</text>
+  <text x="410" y="594" font-family="Arial" font-size="10" fill="#5A7868">Giám đốc · Kỹ thuật trưởng</text>
+  <line x1="410" y1="606" x2="690" y2="606" stroke="#E0EBE4" stroke-width="1"/>
+  <text x="410" y="624" font-family="Arial" font-size="10" fill="#5A7868">M  0xxx xxx xxx</text>
+  <text x="410" y="640" font-family="Arial" font-size="10" fill="#5A7868">E  ten@canopyvietnam.vn</text>
+  <text x="410" y="656" font-family="Arial" font-size="10" fill="#5A7868">W  canopyvietnam.vn</text>
+  <text x="410" y="672" font-family="Arial" font-size="10" fill="#5A7868">A  Bình Định, Việt Nam</text>
+  <text x="410" y="696" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#3A9062">Nursery · Tissue Culture · Forest Services</text>
+
+  <!-- SCALE SIZES -->
+  <text x="760" y="516" font-family="Arial" font-size="10" font-weight="500" fill="#5A7868" letter-spacing="2">LOGO AT SCALE</text>
+  <rect x="760" y="530" width="580" height="180" rx="10" fill="#0D2E1A"/>
+
+  <g transform="translate(810,620) scale(0.35)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="810" y="700" text-anchor="middle" font-family="Arial" font-size="10" fill="rgba(255,255,255,.4)">96px</text>
+
+  <g transform="translate(900,628) scale(0.24)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="900" y="700" text-anchor="middle" font-family="Arial" font-size="10" fill="rgba(255,255,255,.4)">64px</text>
+
+  <g transform="translate(966,636) scale(0.15)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="966" y="700" text-anchor="middle" font-family="Arial" font-size="10" fill="rgba(255,255,255,.4)">40px</text>
+
+  <g transform="translate(1016,642) scale(0.1)">
+    <polygon points="0,-140 100,124 -100,124" fill="white"/>
+    <polygon points="-106,-16 94,124 -306,124" fill="white"/>
+    <polygon points="106,-16 306,124 -94,124" fill="white"/>
+    <rect x="-7" y="124" width="14" height="52" rx="2" fill="white"/>
+    <rect x="-111" y="124" width="14" height="40" rx="2" fill="white"/>
+    <rect x="97" y="124" width="14" height="40" rx="2" fill="white"/>
+  </g>
+  <text x="1016" y="700" text-anchor="middle" font-family="Arial" font-size="10" fill="rgba(255,255,255,.4)">24px</text>
+
+  <!-- FOOTER -->
+  <rect x="0" y="856" width="1400" height="44" fill="#0D2E1A"/>
+  <text x="48" y="882" font-family="Arial" font-size="12" fill="rgba(255,255,255,.35)">Canopy Vietnam · Công ty TNHH Tán Rừng Việt Nam · Bình Định, Việt Nam · canopyvietnam.vn</text>
+  <text x="1352" y="882" text-anchor="end" font-family="Georgia,serif" font-size="12" font-style="italic" fill="#3A9062">Nuôi dưỡng rừng cho tương lai</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <title>Canopy Vietnam — Logo Mark</title>
+  <rect width="500" height="500" rx="68" fill="#0D2E1A"/>
+  <polygon points="250,70  350,344 150,344" fill="white"/>
+  <polygon points="148,174 256,344  40,344" fill="white"/>
+  <polygon points="352,174 460,344 244,344" fill="white"/>
+  <rect x="243" y="344" width="14" height="58" rx="2" fill="white"/>
+  <rect x="141" y="344" width="14" height="44" rx="2" fill="white"/>
+  <rect x="345" y="344" width="14" height="44" rx="2" fill="white"/>
+</svg>

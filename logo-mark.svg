@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 640" width="500" height="640">
+  <title>Canopy Vietnam — Wordmark Vertical</title>
+  <g transform="translate(0,0)">
+    <polygon points="250,28  350,302 150,302" fill="#0D2E1A"/>
+    <polygon points="148,132 256,302  40,302" fill="#0D2E1A"/>
+    <polygon points="352,132 460,302 244,302" fill="#0D2E1A"/>
+    <rect x="243" y="302" width="14" height="52" rx="2" fill="#0D2E1A"/>
+    <rect x="141" y="302" width="14" height="40" rx="2" fill="#0D2E1A"/>
+    <rect x="345" y="302" width="14" height="40" rx="2" fill="#0D2E1A"/>
+  </g>
+  <line x1="100" y1="378" x2="400" y2="378" stroke="#0D2E1A" stroke-width="1" opacity="0.15"/>
+  <text x="250" y="428" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="52" font-weight="700" fill="#0D2E1A">Canopy</text>
+  <text x="250" y="484" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="52" font-weight="700" fill="#0D2E1A">Vietnam</text>
+  <text x="250" y="522" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#5A7868" letter-spacing="4">TÁN RỪNG VIỆT NAM</text>
+  <text x="250" y="558" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-style="italic" fill="#3A9062">Nuôi dưỡng rừng cho tương lai</text>
+</svg>
