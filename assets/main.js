@@ -1,51 +1,50 @@
 /* ==========================================================================
-   CANOPY VIETNAM — SCRIPT
-   File này xử lý: menu mobile, chuyển tab sản phẩm, hiệu ứng cuộn,
-   và gửi form liên hệ qua Formspree (xem hướng dẫn trong README.md).
+   CANOPY VIETNAM — SCRIPT DÙNG CHUNG CHO TOÀN BỘ WEBSITE (nhiều trang)
+   Xử lý: menu mobile + dropdown, hiệu ứng cuộn, accordion FAQ,
+   gửi form liên hệ qua Formspree, tự cập nhật năm ở footer.
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ---------- 0. Đánh dấu JS đã sẵn sàng ----------
-     CSS chỉ ẩn phần tử .reveal khi <body> có class "js-ready".
-     Nhờ vậy nếu JS chưa chạy kịp hoặc bị lỗi, nội dung vẫn hiển thị bình thường. */
+  /* ---------- 0. Đánh dấu JS đã sẵn sàng ---------- */
   document.body.classList.add('js-ready');
 
-  /* ---------- 1. Menu mobile (hamburger) ---------- */
+  /* ---------- 1. Menu mobile (hamburger) + dropdown "Sản phẩm" ---------- */
   var toggle = document.querySelector('.nav-toggle');
   var navLinks = document.querySelector('.nav-links');
 
   if (toggle && navLinks) {
     toggle.addEventListener('click', function () {
-      navLinks.classList.toggle('open');
+      var open = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
 
-    // Đóng menu khi bấm vào 1 link
+    // Trên mobile: bấm vào mục có dropdown ("Sản phẩm") để mở/đóng danh sách con
+    // thay vì đi thẳng tới link (chỉ áp dụng khi menu mobile đang mở).
+    document.querySelectorAll('.has-dropdown > a').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        if (window.innerWidth <= 720) {
+          e.preventDefault();
+          link.parentElement.classList.toggle('open');
+        }
+      });
+    });
+
+    // Đóng menu khi bấm vào 1 link con (không có dropdown)
     navLinks.querySelectorAll('a').forEach(function (link) {
+      if (link.parentElement.classList.contains('has-dropdown')) return;
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+      });
+    });
+    navLinks.querySelectorAll('.dropdown-menu a').forEach(function (link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('open');
       });
     });
   }
 
-  /* ---------- 2. Chuyển tab danh mục sản phẩm ---------- */
-  var tabs = document.querySelectorAll('.product-tab');
-  var groups = document.querySelectorAll('.product-group');
-
-  tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      var target = tab.getAttribute('data-target');
-
-      tabs.forEach(function (t) { t.classList.remove('active'); });
-      tab.classList.add('active');
-
-      groups.forEach(function (g) {
-        g.classList.toggle('active', g.getAttribute('id') === target);
-      });
-    });
-  });
-
-  /* ---------- 3. Hiệu ứng hiện dần khi cuộn trang ---------- */
+  /* ---------- 2. Hiệu ứng hiện dần khi cuộn trang ---------- */
   var revealEls = document.querySelectorAll('.reveal');
 
   if ('IntersectionObserver' in window && revealEls.length) {
@@ -60,8 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     revealEls.forEach(function (el) { observer.observe(el); });
 
-    // Lưới an toàn: nếu sau 2.5s vẫn còn phần tử chưa hiện (ví dụ do lỗi đo
-    // kích thước trang, in ấn, hoặc công cụ chụp ảnh tự động), cho hiện hết.
     setTimeout(function () {
       revealEls.forEach(function (el) { el.classList.add('in-view'); });
     }, 2500);
@@ -69,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     revealEls.forEach(function (el) { el.classList.add('in-view'); });
   }
 
-  /* ---------- 4. Đổi nền header khi cuộn ---------- */
+  /* ---------- 3. Đổi nền header khi cuộn ---------- */
   var header = document.querySelector('.site-header');
   window.addEventListener('scroll', function () {
     if (window.scrollY > 12) {
@@ -79,11 +76,28 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  /* ---------- 4. Accordion FAQ ---------- */
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    var btn = item.querySelector('.faq-question');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      item.parentElement.querySelectorAll('.faq-item').forEach(function (i) {
+        i.classList.remove('open');
+        var q = i.querySelector('.faq-question');
+        if (q) q.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
   /* ---------- 5. Form liên hệ ----------
      Mặc định form gửi thẳng qua Formspree (xem README.md để lấy link riêng).
-     Nếu chưa cấu hình, form sẽ chỉ hiển thị thông báo demo. */
-  var form = document.getElementById('contact-form');
-  if (form) {
+     Nếu chưa cấu hình, form sẽ hiển thị thông báo demo. */
+  document.querySelectorAll('form.contact-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       var action = form.getAttribute('action') || '';
       if (action.indexOf('YOUR_FORM_ID') !== -1) {
@@ -92,10 +106,26 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       // Nếu action đã được cấu hình đúng (Formspree), form sẽ gửi đi như bình thường.
     });
-  }
+  });
 
   /* ---------- 6. Tự cập nhật năm ở footer ---------- */
-  var yearEl = document.getElementById('current-year');
-  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+  document.querySelectorAll('.js-year').forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+
+  /* ---------- 7. Nút "Sao chép liên kết" trên bài blog (nếu có) ---------- */
+  document.querySelectorAll('[data-copy-link]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var url = window.location.href;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function () {
+          var original = btn.getAttribute('aria-label');
+          btn.setAttribute('aria-label', 'Đã sao chép!');
+          setTimeout(function () { btn.setAttribute('aria-label', original); }, 1800);
+        });
+      }
+    });
+  });
 
 });
